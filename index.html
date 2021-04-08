@@ -8,14 +8,30 @@
   <title>Weather Api App</title>
 </head>
 <body>
-  <h2>Get to know the weather</h2>
-  <label>Type in a city or country: </label><input id="text"></input>
-  <label>Select units: </label><select>
-    <option value="°F">Fahrenheit</option>
-    <option value="°C">Celcius</option>
+  <div id ="get" class="get">
+    <h2>Get to know the weather</h2>
+  <label>Type in a city or country: </label><input id="place"></input>
+  <label>Select units: </label>
+  <select id="units">
+    <option id="fahrenheit" value="°F">Fahrenheit</option>
+    <option id="celsius" value="°C">Celsius</option>
   </select>
   <label>Select language: </label>
-  <select></select>
+  <select id="language">
+    <option id="english" value="en">English</option>
+    <option id="spanish" value="es">Spanish</option>
+  </select>
+  <button id="search" onclick="start()">
+    Get weather data
+  </button>
+
+  </div>
+  <div id="show" class="show">
+    <img id="icon">
+    <label id="windl">Description: </label><label id="description"></label>
+    <label id="windl">Wind speed: </label><label id="wind"></label>
+    <label id="templ">Temperature: </label><label id="temp"></label>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
