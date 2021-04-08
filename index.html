@@ -13,13 +13,8 @@
   <label>Type in a city or country: </label><input id="place"></input>
   <label>Select units: </label>
   <select id="units">
-    <option id="fahrenheit" value="°F">Fahrenheit</option>
-    <option id="celsius" value="°C">Celsius</option>
-  </select>
-  <label>Select language: </label>
-  <select id="language">
-    <option id="english" value="en">English</option>
-    <option id="spanish" value="es">Spanish</option>
+    <option id="fahrenheit" value="°F">Imperial</option>
+    <option id="celsius" value="°C">Metric</option>
   </select>
   <button id="search" onclick="start()">
     Get weather data
@@ -28,9 +23,20 @@
   </div>
   <div id="show" class="show">
     <img id="icon">
-    <label id="windl">Description: </label><label id="description"></label>
-    <label id="windl">Wind speed: </label><label id="wind"></label>
-    <label id="templ">Temperature: </label><label id="temp"></label>
+    <div class="showi">
+      <label id="windl">Description: </label><label id="description"></label>
+    </div>
+    <div class="showi">
+      <label id="windl">Wind speed: </label><label id="wind"></label>
+    </div>
+    <div class="showi">
+      <label id="templ">Temperature: </label><label id="temp"></label>
+    </div>
+    <div class="showi">
+      <label id="huml">Humidity (%): </label><label id="hum"></label>
+    </div>
+
+
   </div>
   <script src="index.js"></script>
 </body>
