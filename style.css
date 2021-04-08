@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: 'New Tegomin', serif;
-  text-align:center;
+  text-align:center!important;
 }
 
 h1 {
@@ -14,8 +14,10 @@ h1 {
   margin: 1rem!important;
 }
 
-button {
+#search {
   min-width: 100px;
+  font-weight: 600;
+  text-align: center!important;
 }
 
 .get, .show {
@@ -35,6 +37,7 @@ button {
   margin: auto;
   justify-content: space-between;
   padding: 0.5rem;
+  text-align: center;
 }
 
 input {
@@ -47,8 +50,12 @@ select, button {
   background: linear-gradient(90deg, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
 }
 
+.labellabel {
+  font-weight: 600;
+}
+
 .labelshow {
-  font-weight: 200;
+  font-weight: 400;
 
 }
 
