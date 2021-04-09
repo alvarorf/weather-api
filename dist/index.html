@@ -10,12 +10,16 @@
 <body>
   <div id ="get" class="get">
     <h1>Get to know the weather</h1>
-  <label>Type in a city or country: </label><input id="place"></input>
-  <label>Select units: </label>
-  <select id="units">
-    <option id="fahrenheit" value="°F">Imperial</option>
-    <option id="celsius" value="°C">Metric</option>
-  </select>
+  <div class="get-r" id="enter-place">
+    <label>Type in a city or country: </label>
+  </div>
+  <div class="get-r">
+    <label>Select units: </label>
+    <select id="units">
+      <option id="fahrenheit" value="°F">Imperial</option>
+      <option id="celsius" value="°C">Metric</option>
+    </select>
+  </div>
   <button type="button" id="search" >
     Get weather data
   </button>
@@ -43,6 +47,6 @@
     </div>
 
   </div>
-  <script src="main.js"></script>
+  <script src="../src/index.js"></script>
 </body>
 </html>

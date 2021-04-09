@@ -40,11 +40,19 @@ h1 {
   text-align: center;
 }
 
+.get-r {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 150%;
+  vertical-align: middle;
+}
+
 input {
   padding: 0!important;
 }
 
-select, button {
+ button {
   padding: 0.5rem !important;
   margin: 0.5rem auto !important;
   background: linear-gradient(90deg, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);

@@ -1,4 +1,7 @@
-const place = document.getElementById('place').value;
+const placev = document.createElement('input')
+placev.id = 'place';
+document.getElementById('enter-place').appendChild(placev);
+
 const units = document.getElementById('units').value;
 const icon = document.getElementById('icon');
 
@@ -14,12 +17,12 @@ const getGiphy = async (search, giphy) => {
 };
 
 const convertData = (data) => {
-  let tempd = Math.round(100 * (((data.main.temp_max + data.main.temp_min) / 2) - 273.15)) / 100;
+  let tempd = ((data.main.temp_max + data.main.temp_min) / 2) - 273.15;
   let windd = Math.round(data.wind.speed * 100) / 100;
   const humd = Math.round(data.main.humidity * 100) / 100;
   const pre = data.main.pressure;
   if (units === '°F') {
-    tempd = `${(9 / 5) * tempd + 32} °F`;
+    tempd = `${Math.round(((9 / 5) * tempd + 32) * 100) / 100} °F`;
     windd = `${Math.round(windd * 2.23694 * 100) / 100} miles/hour`;
   } else {
     tempd += ' °C';
@@ -39,8 +42,7 @@ const displayData = (data) => {
   const wind = document.getElementById('wind');
   const hum = document.getElementById('hum');
   const pre = document.getElementById('pre');
-  const results = convertData(data);
-  [temp.textContent, wind.textContent, hum.textContent, pre.textContent] = results;
+  [temp.textContent, wind.textContent, hum.textContent, pre.textContent] = convertData(data);
 };
 
 const forecast = async (place, units) => {
@@ -51,6 +53,7 @@ const forecast = async (place, units) => {
 
 const startP = () => {
   icon.src = './giphy.gif';
+  const place = document.getElementById('place').value;
   forecast(place, units);
 };
 
