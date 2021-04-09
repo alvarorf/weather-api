@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 html {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(131,131,133,0.27493004037552526)), color-stop(35%, rgba(102,102,182,0.11526617482930668)), to(rgba(0,212,255,0.09565833169205185)));
+  background: -o-linear-gradient(left, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
   background: linear-gradient(90deg, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
 }
 
@@ -22,31 +24,62 @@ h1 {
 
 .get, .show {
   border: 1px solid rgba(255,255,255,0.34);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 80%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(131,131,133,0.27493004037552526)), color-stop(35%, rgba(102,102,182,0.11526617482930668)), to(rgba(0,212,255,0.09565833169205185)));
+  background: -o-linear-gradient(left, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
   background: linear-gradient(90deg, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
 }
 
 .get > *, .show > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40%;
   margin: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0.5rem;
   text-align: center;
+}
+
+.get-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  line-height: 150%;
+  vertical-align: middle;
 }
 
 input {
   padding: 0!important;
 }
 
-select, button {
+ button {
   padding: 0.5rem !important;
   margin: 0.5rem auto !important;
+  background: -webkit-gradient(
+    linear, left top, right top, from(rgba(131,131,133,0.27493004037552526)), color-stop(35%, rgba(102,102,182,0.11526617482930668)), to(rgba(0,212,255,0.09565833169205185))
+  );
+  background: -o-linear-gradient(left, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
   background: linear-gradient(90deg, rgba(131,131,133,0.27493004037552526) 0%, rgba(102,102,182,0.11526617482930668) 35%, rgba(0,212,255,0.09565833169205185) 100%);
 }
 

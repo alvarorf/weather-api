@@ -1,5 +1,1 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-var __webpack_exports__ = {};
-/******/ })()
-;
+(()=>{"use strict";var e={};(e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})})(e);const t=document.createElement("input");t.id="place",document.getElementById("enter-place").appendChild(t),document.getElementById("search").addEventListener("click",(()=>(()=>{const t=document.getElementById("units").value;document.getElementById("icon").src="./giphy.gif";const n=document.getElementById("place").value;e.forecast(n,t)})()))})();
