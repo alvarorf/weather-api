@@ -1,0 +1,41 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "A weather api app which fetches data from openweatherapi",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
+    "watch": "webpack --watch",
+    "local": "http-server -p 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarorf/weather-api.git"
+  },
+  "keywords": [
+    "api",
+    "weather",
+    "javascript"
+  ],
+  "author": "Álvaro Ruiz <aaruizf@unal.edu.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarorf/weather-api/issues"
+  },
+  "homepage": "https://github.com/alvarorf/weather-api#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "file-loader": "^6.2.0",
+    "http-server": "^0.12.3",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

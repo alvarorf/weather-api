@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Weather Api App</title>
+</head>
+<body>
+  <div id ="get" class="get">
+    <h1>Get to know the weather</h1>
+  <div class="get-r" id="enter-place">
+    <label>Type in a city or country: </label>
+  </div>
+  <div class="get-r">
+    <label>Select units: </label>
+    <select id="units">
+      <option id="fahrenheit" value="imperial">Imperial</option>
+      <option id="celsius" value="metric">Metric</option>
+    </select>
+  </div>
+  <button type="button" id="search" >
+    Get weather data
+  </button>
+
+  </div>
+  <div id="show" class="show">
+    <div>
+      <img id="icon" alt="">
+      <img id="giphy" alt="">
+    </div>
+    <div class="showi">
+      <label id="windl" class="labellabel">Description: </label><label class="labelshow" id="description"></label>
+    </div>
+    <div class="showi">
+      <label id="windl" class="labellabel">Wind speed: </label><label class="labelshow" id="wind"></label>
+    </div>
+    <div class="showi">
+      <label id="templ" class="labellabel">Temperature: </label><label class="labelshow" id="temp"></label>
+    </div>
+    <div class="showi">
+      <label id="huml" class="labellabel">Humidity (%): </label><label class="labelshow" id="hum"></label>
+    </div>
+    <div class="showi">
+      <label id="prel" class="labellabel">Pressure at sea level (hPa): </label><label class="labelshow" id="pre"></label>
+    </div>
+
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
