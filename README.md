@@ -1,5 +1,7 @@
 # Weather-API
 
+[Demo](https://alvaroandresruiz.me/weather-api/)
+
 This project is a javascript project that uses the openweather and the giphy API's to fetch some data about the weather in a specific country or city and display it on the screen.
 ![screenshot](./screenshot.png)
 
@@ -10,8 +12,6 @@ Some features:
 - ES6 syntax is used, whenever possible.
 - The project is modularized, with different files for each section of the page.
 - Webpack is used to compile javascript, css and images.
-- Users can create projects, add todos, remove todos.
-- Localstorage is used as a database.
 
 ## Usage
 
