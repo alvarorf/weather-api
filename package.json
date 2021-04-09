@@ -7,7 +7,8 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "local": "http-server -p 5000"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "file-loader": "^6.2.0",
+    "http-server": "^0.12.3",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.19.0",

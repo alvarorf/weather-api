@@ -17,7 +17,8 @@ Some features:
 
 - Clone the repo "https://github.com/alvarorf/weather-api.git".
 - Run "npm install" to install the required dependencies.
-- Open the page.
+- Run "npm run local" to run the local version of the project.
+- Go to "http://localhost:5000/dist/" in your web browser.
 - Type in the search bar for a city or country.
 
 
