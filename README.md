@@ -15,7 +15,7 @@ Some features:
 
 ## Usage
 
-- Clone the repo "https://github.com/alvarorf/todo-list.git".
+- Clone the repo "https://github.com/alvarorf/weather-api.git".
 - Run "npm install" to install the required dependencies.
 - Open the page.
 - Type in the search bar for a city or country.
